@@ -15,8 +15,9 @@ export default function WaitlistForm() {
       await new Promise(resolve => setTimeout(resolve, 1000)) // Simulated API call
       setStatus('success')
       setEmail('')
-    } catch (_) {
+    } catch (error) {
       setStatus('error')
+      console.error('Error submitting form:', error)
     }
   }
 
