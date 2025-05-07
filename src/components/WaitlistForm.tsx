@@ -40,7 +40,7 @@ export default function WaitlistForm() {
         </button>
       </div>
       {status === 'success' && (
-        <p className="mt-2 text-green-600">Thanks for joining! We'll be in touch soon.</p>
+        <p className="mt-2 text-green-600">Thanks for joining! We&apos;ll be in touch soon.</p>
       )}
       {status === 'error' && (
         <p className="mt-2 text-red-600">Something went wrong. Please try again.</p>
